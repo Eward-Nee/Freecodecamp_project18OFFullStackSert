@@ -1,0 +1,49 @@
+/*form :where(input:focus, textarea:focus) {
+    border-color: rgb(0, 174, 255);
+}
+*/
+input:focus,
+textarea:focus {
+    border-color: rgb(0, 174, 255);
+}
+
+/*
+form :where(input :invalid, select :invalid, textarea :invalid) {
+    border-color: red;
+}*/
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: green;
+}
+
+button:hover {
+    background-color: burlywood;
+}
+
+.radio-group input[type="radio"]:checked {
+    border-color: aqua;
+    background-color: black;
+    color: wheat;
+    box-shadow: 2px 2px 4px midnightblue;
+}
+
+.radio-group input[type="radio"]:checked+label {
+    border: 2px solid aqua;
+    background-color: black;
+    color: wheat;
+    box-shadow: 2px 2px 4px midnightblue;
+}
+
+
+
+input:nth-child(1) {
+    border-radius: 10px;
+}
